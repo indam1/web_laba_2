@@ -36,7 +36,6 @@ app.post('/v1/authorization', (req, res) => {
 })
 
 app.get('/v1/cars', (req, res) => {
-    res
     const cars = [{
         id: 1,
         model: 'm3',
