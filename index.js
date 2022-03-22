@@ -36,7 +36,7 @@ app.post('/v1/authorization', (req, res) => {
 })
 
 app.get('/v1/cars', (req, res) => {
-    const cars = [{
+    const vehicles = [{
         id: 1,
         model: 'm3',
         price: 10000000,
@@ -51,7 +51,7 @@ app.get('/v1/cars', (req, res) => {
         description: null,
         brandName: 'BMW'
     }]
-    res.render('table', { taskList: cars });
+    res.render('table', { taskList: vehicles });
 })
 
 app.use((req, res, next) => {
